@@ -1,0 +1,251 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+               /*******************************
+      * MODAL AS LEFT/RIGHT SIDEBAR
+      * Add "left" or "right" in modal parent div, after class="modal".
+      * Get free snippets on bootpen.com
+
+      *******************************/
+      @media (min-width: 576px) {
+        .rounded-nav {
+          border-radius: 50rem !important;
+        }
+      }
+      
+      @media (min-width: 576px) {
+        .rounded-nav .nav-link {
+          border-radius: 50rem !important;
+        }
+      }
+      
+     #fullHeightModalRight .modal.left .modal-dialog,
+     #center  .modal.right .modal-dialog {
+        position: fixed;
+        margin: auto;
+        width: 320px;
+        height: 100%;
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        -o-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+
+     #fullHeightModalRight .modal.left .modal-content,
+     #center .modal.right .modal-content {
+        height: 100%;
+        overflow-y: auto;
+     }
+    
+    #fullHeightModalRight .modal.left .modal-body,
+    #center .modal.right .modal-body {
+        padding: 15px 15px 80px;
+    }
+
+/*Left*/
+   #fullHeightModalRight .modal.left.fade .modal-dialog{
+        left: -320px;
+        -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+        transition: opacity 0.3s linear, left 0.3s ease-out;
+    }
+    
+    #fullHeightModalRight .modal.left.fade.in .modal-dialog{
+        left: 0;
+    }
+        
+/*Right*/
+    #center .modal.right.fade .modal-dialog {
+        right: -320px;
+        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+        -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+        transition: opacity 0.3s linear, right 0.3s ease-out;
+    }
+    
+    #center .modal.right.fade.in .modal-dialog {
+        right: 0;
+    }
+
+/* ----- MODAL STYLE ----- */
+    .modal-content {
+        border-radius: 0;
+        border: none;
+    }
+
+    .modal-header {
+        border-bottom-color: #EEEEEE;
+        background-color: #FAFAFA;
+    }
+
+/* ----- v CAN BE DELETED v ----- */
+
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #mapLegend div {
+        height: 40px;
+        line-height: 25px;
+        font-size: 1.2em;
+        }
+        #mapLegend div img {
+        float: left;
+        margin-right: 5px;
+        }
+        #mapLegend h3 {
+            margin-top: 0;
+        }
+            #mapLegends div {
+            height: 40px;
+            line-height: 25px;
+            font-size: 1.2em;
+            }
+            #mapLegends div img {
+            float: left;
+            margin-right: 5px;
+            }
+            #mapLegends h3 {
+                margin-top: 0;
+            }
+
+
+            .wizard {
+                background: white;
+                padding: 10px;
+            }
+            .wizard .nav-tabs {
+                position: relative;
+                border: 0px;
+            }
+            .wizard > div.wizard-inner {
+                position: relative;
+            }
+            .connecting-line{
+                height:15px;
+                background: #e0e0e0;
+                position: absolute;
+                width: 99.5%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top:44%;
+                z-index: 1;
+                border-radius: 15px;
+            }
+            .active-line{
+                height:15px;
+                background: #e0e0e0;
+                position: absolute;
+                width: 99.5%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top:44%;
+                z-index: 1;
+                border-radius: 15px !important;
+            }
+            .active .connecting-line{
+                background-color: #2ED4E0;
+            }
+            .border-right{
+                border-radius: 15px 0 0 15px;
+            }
+            .border-left{
+                border-radius: 0;
+            }
+            .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+                cursor: default;
+                border: 0;
+                color:#2ED4E0;
+                border-bottom-color: transparent;
+            }
+            .nav-tabs li p{
+                padding-top:45px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .list-inline{
+                text-align: right;
+            }
+            span.round-tab {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                border-radius: 100px;
+                background:#DFE3E4;
+                border: 2px solid #fff;
+                z-index:1;
+                position:absolute;
+                text-align: center;
+                font-size: 25px;
+            }
+            .wizard li.active span.round-tab{
+                background:#2ED4E0;
+                color:white;
+                border: 2px solid #fff;
+            }
+            span.round-tab:hover{
+                color: white;
+                border: 2px solid #fff;
+                background-color:#2ED4E0; 
+            }
+            .wizard .nav-tabs > li {
+                width: 25%;
+            }
+            .wizard .nav-tabs > li a{
+                width: 40px;
+                height: 40px;
+                margin: 20px auto;
+                border-radius: 100%;
+                padding: 0;
+                color: #777;
+            }
+            .wizard .tab-pane {
+                position: relative;
+                padding-top: 15px;
+                border-top: 1px solid #fff;
+                margin-top: 50px;
+            }
+            .next-step:hover, .next-step, .prev-step:hover, .prev-step{
+                position: relative;
+                background-color: #2ED4E0;
+                font-size: 16px;
+                color: #FFFFFF;
+            }
+            @media( min-width : 320px ) and ( max-width : 360px ){
+                .wizard {
+                    width: 90%;
+                    height: auto !important;
+                }
+                span.round-tab {
+                    font-size: 16px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .wizard .nav-tabs > li a {
+                    width: 50px;
+                    height: 50px;
+                }
+                .wizard li.active:after {
+                    content: " ";
+                    position: absolute;
+                    left: 35%;
+                }
+                .next-step{
+                    margin-top:10px; 
+                }
+                .nav-tabs li p{
+                    padding-top:60px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                .connecting-line , .active-line{
+                    top:43%;
+                }
+            }
+    
