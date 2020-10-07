@@ -884,6 +884,7 @@
               <li><a href="#"><i class="fa fa-angle-right"></i> Privacy policy</a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i> News</a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i> Contact us</a></li>
+              <li><a href="/login"><i class="fa fa-angle-right"></i> Login</a></li>
             </ul>
           </div>
           <div class="col-md-6">
